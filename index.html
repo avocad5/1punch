@@ -12,7 +12,7 @@
       const mywork = '몰라요' //여기에 자신의 대표작품을 입력하세요
       const career = '저도 몰라요' //여기에 자신의 경력을 입력하세요
       const explanation = '스태프 선정에 가보고 싶은 평범한 유저입니다!' //여기에 자기소개를 입력하세요
-      const maincolor = 'linear-gradient( to right, #8861FF, #C861FF )' //여기에 메인컬러를 입력하세요 #87FFB7
+      const maincolor = 'url(#gradient)' //여기에 메인컬러를 입력하세요 #87FFB7
       const subcolor = '#8ECFFF' //여기에 서브컬러를 입력하세요
       const projectname = ['슈팅골프','점프킹+바운스볼','BLOCKERS','드로퍼 파쿠르','드로퍼 파쿠르 2','드로퍼 파쿠르 정식버전']
       const projectment = ["'그저 슈팅골프'",'새로운방식의 바운스볼!','전략적 퍼즐게임!','이거 뭔 생각으로 만든거지','드로퍼파쿠르의 후속작!','빼액'] 
@@ -205,6 +205,12 @@
 </head>
   </head>
   <body>
+    <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+      <linearGradient id="gradient" x2="1" y2="1">
+        <stop offset="0%" stop-color="#C861FF" />
+        <stop offset="100%" stop-color="##8861FF" />
+      </linearGradient>
+    </svg>
     <div class="container">
       <svg class="head" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
         <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" class="svgpath"></path>
